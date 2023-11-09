@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 6</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+
+        }
+        .outer{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+        .outer .imgdiv{
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid silver;
+        }
+        .outer .formdiv{
+            padding: 0 40px;
+            /* box-sizing: border-box; */
+            
+        }
+        .formdiv .text_field{
+            position: relative;
+            
+        }
+        .text_field input{
+            width: 100%;
+            padding: 0 5px;
+            height: 30px;
+            border: 1px solid silver;
+            border-radius: 3px;
+            outline: none;
+        }
+        .text_field{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        input[type="submit"]{
+            width: 100%;
+            height: 40px;
+            margin: 20px 0;
+            color: white;
+            background-color: green;
+            border: none;
+            border-radius: 3px;
+        }
+        input[type="submit"]:hover{
+            background-color: #32DC32;
+        }
+        .formdiv .footer{
+            margin: 10px 0;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: silver;
+        }
+        .footer button{
+            background-color: red;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="imgdiv">
+            <img src="profile.jpg" alt="" style="height: 250px; width: 250px;">
+        </div>
+
+        <div class="formdiv">
+            <div class="text_field">
+                <label for="">Username</label>
+                <input type="text" placeholder="Enter Username"> 
+            </div>
+
+            <div class="text_field">
+                <label for="">Password</label>
+                <input type="password" placeholder="Enter Password">
+            </div>
+
+            <input type="submit" value="Login">
+
+            <div class="checkbox">
+                <input type="checkbox" name="djshv" id="">
+                <label for="">Remember Me</label>
+            </div>
+
+            <div class="footer">
+                <button><b>Cancel</b></button>
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

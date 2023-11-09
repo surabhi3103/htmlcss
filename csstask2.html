@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 2</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            margin: 80px;
+        }
+        .vertical{
+            height: 400px;
+            width: 400px;
+            background-color: cyan;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid black;
+        }
+        .horizontal{
+            height: 80px;
+            width: 600px;
+            background-color: #D3D3D3;
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            
+            
+        }
+        .v_span{
+            color: blue;
+            height: 80px;
+            font-size: x-large;
+            padding: 22px;
+        }
+        .v_span:hover{
+            background-color: orange;
+            color: white;
+        }
+        .h_span{
+            border-right: 2px solid blue;
+            color: blue;
+            width: 120px;
+            font-size: x-large;
+            text-align: center;
+            padding: 22px;
+        }
+        .h_span:hover{
+            background-color: gray;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Vertical Navigation Bar -->
+    <div class="vertical">
+        <span class="v_span">Home</span>
+        <span class="v_span">Java</span>
+        <span class="v_span">CSS</span>
+        <span class="v_span">HTML</span>
+        <span class="v_span">Bootstrap</span>
+
+    </div>
+
+    <!-- Horizontal Navigation Bar -->
+    <div class="horizontal">
+        <span class="h_span">Home</span>
+        <span class="h_span">Java</span>
+        <span class="h_span">CSS</span>
+        <span class="h_span">HTML</span>
+        <span class="h_span">Bootstrap</span>
+
+    </div>
+</body>
+</html>
